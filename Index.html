@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday MY CAT🖤🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+let pass = prompt("Enter password to see the project:");
+if(pass !== "meow") {
+    document.body.innerHTML = "<h1>Sorry, wrong password. </h1>";
+}
+</script>
+
+<!-- Audio -->
+<audio id="bgMusic" loop>
+    <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+<section id="intro">
+    <h1 id="typewriter"></h1>
+    <button onclick="nextSection()">Dhuko miu🐈‍⬛</button>
+
+    <!-- Music controls -->
+    <div style="margin-top:20px;">
+        <button onclick="document.getElementById('bgMusic').play()">Play Music 🎵</button>
+        <button onclick="document.getElementById('bgMusic').pause()">Pause Music ⏸️</button>
+    </div>
+</section>
+
+<section id="main" class="hidden">
+    <h2>Happy Birthday, <span class="name">[Samya 👉🏼💙👈🏼]</span> 🎂</h2>
+
+    <img src="photos/us.jpg" alt="meow 🖤" class="photo">
+
+    <p class="message">
+        You’re my favorite plot twist, my safe place,  
+        and the best thing that ever happened to me.
+    </p>
+
+    <button onclick="showReason()">Why I Love You ❤️</button>
+    <p id="reason"></p>
+
+    <button onclick="finalReveal()">miu miu miu </button>
+</section>
+
+<section id="final" class="hidden">
+    <h1>Aishiteru MY MAN🖤</h1>
+    <canvas id="confetti"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
