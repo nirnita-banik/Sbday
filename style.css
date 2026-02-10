@@ -1,0 +1,62 @@
+/* Body + background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #a2d2ff, #cde7ff); /* pastel blue gradient */
+    text-align: center;
+    color: #333;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background: #6ec1e4; /* soft pastel blue button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Hidden sections */
+.hidden {
+    display: none;
+}
+
+/* Photo styling */
+.photo {
+    width: 220px;
+    border-radius: 50%; /* circular */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/* Final section */
+#final {
+    background: #cde7ff; /* pastel blue for final too */
+    color: #333;
+}
+
+/* Confetti canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
